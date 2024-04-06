@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Checkerboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 10px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(8, 80px);
+            /* Repeat each column 8 times horizontally, with a width of 80px */
+            grid-template-rows: repeat(8, 80px);
+            /* Repeat each row 8 times vertically, with a height of 80px */
+            width: 648px;
+            height: 648px;
+            border: 4px solid #cbd;
+            border-radius: 5px;
+        }
+
+        .container>div {
+            border: 4px solid #fff;
+            width: 80px;
+            height: 80px;
+        }
+
+        .color-one {
+            background-color: lightsalmon;
+        }
+
+        .color-one:hover {
+            background-color: lightpink;
+        }
+
+        .color-two {
+            background-color: dodgerblue;
+        }
+
+        .color-two:hover {
+            background-color: deepskyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Grid Checkered Layout Example</h1>
+
+    <p>A checker board consists of 8 columns and 8 rows which make up a total of 64 individual cells (8x8 = 64). Thus
+        the HTML in this document also has 64 elements within the container</p>
+
+    <div class="container">
+        <!-- First 8 <div> element
+      color-one alternates with color-two to create a "checkered' look from left to right 
+      Note that grid-template-columns css specifies 8 columns, so we have 8 <div> elements in the first row.
+    -->
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+
+        <!-- Second 8 <div> elements
+      The next set of 8 <div> elements then alternates between color-two and color-one to continue
+      the checkered look.
+      Note that the next 8 <div> elements are displayed in the second row.
+    -->
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+
+        <!-- Third 8 <div> elements
+      Rinse and repeat by alternating color-one with color-two
+    -->
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+
+        <!-- Fourth 8 <div> elements
+      Rinse and repeat by alternating color-one with color-two
+    -->
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+
+        <!-- Fifth 8 <div> elements -->
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+
+        <!-- Sixth 8 <div> elements -->
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+
+        <!-- Seventh 8 <div> elements -->
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+
+        <!-- Eighth 8 <div> elements
+    These final elements bring the total amount of <div> elements to 64 <div> tags
+  -->
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+        <div class="color-two"></div>
+        <div class="color-one"></div>
+    </div>
+
+</body>
+
+</html>

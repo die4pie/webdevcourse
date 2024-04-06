@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Exercise</title>
+
+    <style>
+        :root {
+            --color-avocado: #697A21;
+            --color-ivory:  #FFFCE8;
+            --color-old-gold: #B8B42D;
+            --color-vermilion: #DD403A;
+            --color-jet: #3E363F;
+            --color-primary: var(--color-old-gold);
+            --color-secondary: var(--color-vermilion);
+            --color-default: var(--color-jet);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Dosis", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 2rem;
+            color: var(--color-default);
+            background-color: var(--color-primary);
+            height: 350px;
+            width: 450px;
+            border: 8px solid var(--color-secondary);
+            box-shadow:
+                3px 3px 5px #0000003d,
+                -3px -3px 5px #0000001a,
+                0px -2px 10px #0000001d;
+            margin: 20px auto;
+            padding-top: 30px;
+        }
+
+        .tier {
+            font-weight: 900;
+            color: var(--color-ivory)
+        }
+
+        .features {
+            list-style-type: "💊" ;
+        }
+
+        .unavailable {
+            list-style-type: "(ง •_•)ง  ";
+        }
+
+        .price {
+            font-weight: 900;
+            font-size: 4rem;
+        }
+        
+        button {
+            width: 150px;
+            padding: 10px;
+            font-family: "Dosis", sans-serif;
+            font-weight: 900;
+            font-style: normal;
+            font-size: 2rem;
+            color: var(--color-ivory);
+            border: 2px solid var(--color-secondary);
+            box-shadow: 9px 9px var(--color-secondary);
+            background-color: var(--color-primary);
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        button:active {
+            transform: translateY(2px);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                float: left;
+                margin: 20px;
+            }
+        }
+
+    </style>
+    
+</head>
+<body style="background-color: var(--color-ivory);" >
+    <div class="container">
+        <div class="tier">Basic</div>
+        <div class="price">&pound;11.99/month</div>
+        <ul class="features">
+            <li>10GB Storage</li>
+            <li>1 User</li>
+            <li class="unavailable">Unsupported</li>
+        </ul>
+        <button type="pushable-button" class="pushable-button">SIGN UP</button>
+    </div>
+
+    <div class="container">
+        <div class="tier">Standard</div>
+        <div class="price">&pound;19.99/month</div>
+        <ul class="features">
+            <li>50GB Storage</li>
+            <li>5 Users</li>
+            <li>Phone & Email Support</li>
+        </ul>
+        <button type="pushable-button" class="pushable-button">SIGN UP</button>
+    </div>
+
+    <div class="container">
+        <div class="tier">Premium</div>
+        <div class="price">&pound;49.99/month</div>
+        <ul class="features">
+            <li>100GB Storage</li>
+            <li>10 Users</li>
+            <li>24/7 Support</li>
+        </ul>
+        <button type="pushable-button" class="pushable-button">SIGN UP</button>
+    </div>
+    
+    
+</body>
+</html>
